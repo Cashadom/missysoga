@@ -23,6 +23,7 @@
       --clay-gold: #d4b483;
       --clay-green: #a8b8a8;
       --clay-beige: #e8d8c5;
+      --aix-green: #6ff1e0; /* Vert pour Aix en Provence */
     }
     *{box-sizing:border-box}
     body{
@@ -73,6 +74,22 @@
     @keyframes pulse {
       0%, 100% { opacity: 0.1; }
       50% { opacity: 0.3; }
+    }
+    
+    /* Animation du halo du logo */
+    @keyframes logoHalo {
+      0%, 100% { 
+        opacity: 0;
+        transform: scale(1);
+      }
+      10% {
+        opacity: 0.7;
+        transform: scale(1.1);
+      }
+      20% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
     }
     
     /* Étoiles animées */
@@ -200,6 +217,8 @@
     
     a{color:inherit; text-decoration:none}
     .wrap{max-width:var(--max); margin:0 auto; padding:0 20px; position:relative; z-index:1}
+    
+    /* Topbar et navigation */
     .topbar{
       position:sticky; top:0; z-index:100;
       backdrop-filter: blur(10px);
@@ -214,7 +233,26 @@
     .brand{
       display:flex; align-items:center; gap:12px;
       min-width:260px;
+      position: relative;
     }
+    
+    /* Halo autour du logo */
+    .brand::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 26px; /* Position ajustée pour centrer sur le logo */
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(111,241,224,0.4) 0%, transparent 70%);
+      filter: blur(10px);
+      opacity: 0;
+      animation: logoHalo 10s ease-in-out infinite;
+      pointer-events: none;
+    }
+    
     .brand .mark{
       width:40px; height:40px; border-radius:12px;
       background: linear-gradient(135deg, rgba(199,167,106,.55), rgba(111,241,224,.18));
@@ -222,15 +260,35 @@
       box-shadow: 0 10px 25px rgba(0,0,0,.25);
       display:grid; place-items:center;
       overflow:hidden;
+      position: relative;
+      z-index: 2;
     }
     .brand .mark img{width:100%; height:100%; object-fit:contain; opacity:.95}
-    .brand strong{letter-spacing:.08em; font-weight:800; font-size:13px}
-    .brand span{display:block; color:var(--muted); font-size:12px; margin-top:2px}
-    .links{display:flex; gap:16px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+    .brand strong{letter-spacing:.08em; font-weight:800; font-size:13px; position: relative; z-index: 2;}
+    .brand span{
+      display:block; 
+      color:var(--aix-green); /* Vert pour Aix en Provence */
+      font-size:12px; 
+      margin-top:2px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    /* Navigation links - Responsive */
+    .links{
+      display:flex; 
+      gap:12px; 
+      align-items:center; 
+      flex-wrap:wrap; 
+      justify-content:flex-end;
+    }
     .links a{
-      font-size:13px; color:rgba(233,242,243,.92);
-      padding:8px 10px; border-radius:12px;
+      font-size:13px; 
+      color:rgba(233,242,243,.92);
+      padding:8px 10px; 
+      border-radius:12px;
       border:1px solid transparent;
+      white-space: nowrap;
     }
     .links a:hover{border-color:var(--line); background:rgba(255,255,255,.03)}
     .cta{
@@ -242,6 +300,7 @@
       box-shadow: 0 12px 30px rgba(111,241,224,.25);
       border:1px solid rgba(111,241,224,.55);
       transition: all 0.3s ease;
+      white-space: nowrap;
     }
     .cta:hover{
       transform: translateY(-2px);
@@ -551,6 +610,7 @@
       border-bottom-color:var(--clay-beige);
     }
 
+    /* Responsive Design */
     @media (max-width: 980px){
       .heroGrid{grid-template-columns: 1fr}
       .product{grid-column: span 12}
@@ -560,6 +620,135 @@
       h1{font-size:34px}
       .product .img{height:240px}
       .background-image{height:200px; margin:20px 0}
+    }
+    
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0;
+      }
+      
+      .brand {
+        min-width: auto;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      
+      .links {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 8px;
+        row-gap: 8px;
+      }
+      
+      .links a {
+        padding: 6px 8px;
+        font-size: 12px;
+      }
+      
+      .cta {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+      
+      .hero {
+        padding: 30px 0 20px;
+      }
+      
+      .heroMain {
+        padding: 20px;
+      }
+      
+      .kicker {
+        font-size: 11px;
+        padding: 6px 10px;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      .sub {
+        font-size: 14px;
+      }
+      
+      .pill {
+        font-size: 12px;
+        padding: 7px 10px;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .links {
+        flex-wrap: wrap;
+        max-height: none;
+        gap: 6px;
+      }
+      
+      .links a {
+        font-size: 11px;
+        padding: 5px 7px;
+      }
+      
+      .cta {
+        padding: 7px 10px;
+        font-size: 11px;
+      }
+      
+      .section {
+        padding: 20px 0;
+      }
+      
+      .section h2 {
+        font-size: 20px;
+      }
+      
+      .lead {
+        font-size: 14px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .wrap {
+        padding: 0 15px;
+      }
+      
+      .links {
+        gap: 4px;
+        row-gap: 4px;
+      }
+      
+      .links a {
+        font-size: 10px;
+        padding: 4px 6px;
+      }
+      
+      .cta {
+        padding: 6px 8px;
+        font-size: 10px;
+      }
+      
+      .brand strong {
+        font-size: 12px;
+      }
+      
+      .brand span {
+        font-size: 11px;
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+      
+      .pillRow {
+        gap: 6px;
+      }
+      
+      .pill {
+        font-size: 11px;
+        padding: 6px 8px;
+      }
     }
   </style>
 </head>
@@ -588,8 +777,8 @@
             <img src="logo.png" alt="Missy Soga - Logo marque dermo-cosmétique française" />
           </div>
           <div>
-            <strong>MISSY SOGA</strong>
-            <span>Distribué sur • <a href="https://www.klscosmetics.com" target="_blank" class="distribution-link">www.klscosmetics.com</a></span>
+            <strong>Missy Soga™</strong>
+            <span>Aix en Provence</span>
           </div>
         </div>
 
@@ -600,7 +789,7 @@
           <a href="#blackstone">BLACKSTONE</a>
           <a href="#standards">Standards</a>
           <a href="#pharma">Pharmacie</a>
-          <a class="cta" href="#contact">Demander un kit / Devis</a>
+          <a class="cta" href="#contact">Distribuer la marque</a>
         </div>
       </div>
     </div>
@@ -642,8 +831,8 @@
           <div class="sideCard">
             <div class="quote">
               <p>
-                "Le soin naît de l’observation des états cutanés fragilisés.
-Des formules claires, utiles, pensées pour respecter la peau et s’intégrer à une pratique officinale."
+                "Le soin naît de l'observation des états cutanés fragilisés.
+Des formules claires, utiles, pensées pour respecter la peau et s'intégrer à une pratique officinale."
               </p>
               <small>— MISSY SOGA, direction de création</small>
             </div>
@@ -752,7 +941,7 @@ Des formules claires, utiles, pensées pour respecter la peau et s’intégrer �
         <div class="card">
           <h3>2017 • Naissance à Aix-en-Provence</h3>
           <p>
-            Création de Missy Soga par Cyril Ragonet, avec pour ambition de proposer
+            Création de Missy Soga, avec pour ambition de proposer
             des soins dermo-cosmétiques pensés pour les pharmacies et leurs clients.
             L'accent est mis sur la tolérance et la lisibilité des formules.
           </p>
@@ -1026,7 +1215,7 @@ Des formules claires, utiles, pensées pour respecter la peau et s’intégrer �
         <div>
           <div class="smallcaps">MISSY SOGA</div>
           <p style="margin:10px 0 0; line-height:1.7;">
-            Marque dermo-cosmétique française créée par <strong>Cyril Ragonet</strong>.  
+            Marque dermo-cosmétique française  
             ADN : le soin utile, la tolérance, la routine courte, et une approche inspirée de la pharmacie.
           </p>
           <p style="margin:10px 0 0; line-height:1.7;">
