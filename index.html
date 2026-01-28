@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- SEO Optimisé -->
+  <title>Missy Soga | Soins visage dermo-cosmétiques pour peaux sensibles</title>
+  <meta name="description" content="Missy Soga développe des soins visage dermo-cosmétiques inspirés de la pharmacie : formules sobres, haute tolérance, routines courtes pour peaux sensibles et fragilisées." />
+  <style>
+    :root{
+      --bg:#0b1416;
+      --card:#0f1e21;
+      --muted:#9fb4b8;
+      --text:#e9f2f3;
+      --gold:#c7a76a;
+      --line:rgba(233,242,243,.10);
+      --ok:#6ee7b7;
+      --warn:#fbbf24;
+      --cyan:#6ff1e0;
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1120px;
+      --clay-gold: #d4b483;
+      --clay-green: #a8b8a8;
+      --clay-beige: #e8d8c5;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      background:
+        /* Ciel noir nuageux */
+        linear-gradient(135deg, #0a1012 0%, #1a2528 25%, #0a1012 50%, #1a2528 75%, #0a1012 100%),
+        /* Étoiles fines */
+        radial-gradient(2px 2px at 10% 15%, rgba(212,180,131,.8), transparent 50%),
+        radial-gradient(1.5px 1.5px at 25% 40%, rgba(168,184,168,.6), transparent 50%),
+        radial-gradient(2px 2px at 40% 25%, rgba(232,216,197,.7), transparent 50%),
+        radial-gradient(1px 1px at 60% 35%, rgba(212,180,131,.5), transparent 50%),
+        radial-gradient(1.5px 1.5px at 75% 20%, rgba(168,184,168,.4), transparent 50%),
+        radial-gradient(2px 2px at 85% 45%, rgba(232,216,197,.6), transparent 50%),
+        radial-gradient(1px 1px at 15% 70%, rgba(212,180,131,.3), transparent 50%),
+        radial-gradient(2px 2px at 30% 85%, rgba(168,184,168,.5), transparent 50%),
+        radial-gradient(1.5px 1.5px at 55% 65%, rgba(232,216,197,.4), transparent 50%),
+        radial-gradient(1px 1px at 70% 80%, rgba(212,180,131,.2), transparent 50%),
+        radial-gradient(2px 2px at 90% 60%, rgba(168,184,168,.3), transparent 50%),
+        /* Effets de brillance */
+        radial-gradient(400px 400px at 0% 0%, rgba(232,216,197,.03), transparent 50%),
+        radial-gradient(300px 300px at 100% 100%, rgba(212,180,131,.02), transparent 50%),
+        /* Nuages subtils */
+        radial-gradient(500px 200px at 20% 10%, rgba(159,180,184,.05), transparent 70%),
+        radial-gradient(400px 150px at 80% 30%, rgba(159,180,184,.04), transparent 60%),
+        /* Dégradé principal */
+        linear-gradient(180deg, #061012 0%, var(--bg) 45%, #061012 100%);
+      background-attachment: fixed;
+      background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+    
+    /* Animation des étoiles */
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 0.8; }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 0.1; }
+      50% { opacity: 0.3; }
+    }
+    
+    /* Étoiles animées */
+    .star {
+      position: fixed;
+      background: rgba(232,216,197,.6);
+      border-radius: 50%;
+      animation: twinkle 3s infinite;
+      z-index: -1;
+    }
+    
+    .star:nth-child(1) {
+      width: 2px;
+      height: 2px;
+      top: 15%;
+      left: 10%;
+      animation-delay: 0s;
+      background: var(--clay-gold);
+    }
+    
+    .star:nth-child(2) {
+      width: 1px;
+      height: 1px;
+      top: 25%;
+      left: 40%;
+      animation-delay: 1.5s;
+      background: var(--clay-green);
+    }
+    
+    .star:nth-child(3) {
+      width: 2px;
+      height: 2px;
+      top: 40%;
+      left: 25%;
+      animation-delay: 0.7s;
+      background: var(--clay-beige);
+    }
+    
+    .star:nth-child(4) {
+      width: 1px;
+      height: 1px;
+      top: 60%;
+      left: 35%;
+      animation-delay: 2.3s;
+      background: var(--clay-gold);
+    }
+    
+    .star:nth-child(5) {
+      width: 1.5px;
+      height: 1.5px;
+      top: 75%;
+      left: 20%;
+      animation-delay: 1.2s;
+      background: var(--clay-green);
+    }
+    
+    .star:nth-child(6) {
+      width: 2px;
+      height: 2px;
+      top: 85%;
+      left: 45%;
+      animation-delay: 0.4s;
+      background: var(--clay-beige);
+    }
+    
+    .star:nth-child(7) {
+      width: 1px;
+      height: 1px;
+      top: 15%;
+      left: 70%;
+      animation-delay: 2.8s;
+      background: var(--clay-gold);
+    }
+    
+    .star:nth-child(8) {
+      width: 2px;
+      height: 2px;
+      top: 30%;
+      left: 85%;
+      animation-delay: 1.8s;
+      background: var(--clay-green);
+    }
+    
+    .star:nth-child(9) {
+      width: 1.5px;
+      height: 1.5px;
+      top: 55%;
+      left: 65%;
+      animation-delay: 0.9s;
+      background: var(--clay-beige);
+    }
+    
+    .star:nth-child(10) {
+      width: 1px;
+      height: 1px;
+      top: 70%;
+      left: 80%;
+      animation-delay: 2.1s;
+      background: var(--clay-gold);
+    }
+    
+    /* Brillance intermittente */
+    .glow {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232,216,197,.1) 0%, transparent 70%);
+      filter: blur(20px);
+      animation: pulse 4s infinite;
+      z-index: -2;
+    }
+    
+    .glow:nth-child(11) {
+      top: 20%;
+      left: 15%;
+      animation-delay: 0s;
+    }
+    
+    .glow:nth-child(12) {
+      top: 60%;
+      right: 20%;
+      animation-delay: 2s;
+    }
+    
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 20px; position:relative; z-index:1}
+    .topbar{
+      position:sticky; top:0; z-index:100;
+      backdrop-filter: blur(10px);
+      background: rgba(6,16,18,.75);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width:260px;
+    }
+    .brand .mark{
+      width:40px; height:40px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(199,167,106,.55), rgba(111,241,224,.18));
+      border:1px solid rgba(199,167,106,.35);
+      box-shadow: 0 10px 25px rgba(0,0,0,.25);
+      display:grid; place-items:center;
+      overflow:hidden;
+    }
+    .brand .mark img{width:100%; height:100%; object-fit:contain; opacity:.95}
+    .brand strong{letter-spacing:.08em; font-weight:800; font-size:13px}
+    .brand span{display:block; color:var(--muted); font-size:12px; margin-top:2px}
+    .links{display:flex; gap:16px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+    .links a{
+      font-size:13px; color:rgba(233,242,243,.92);
+      padding:8px 10px; border-radius:12px;
+      border:1px solid transparent;
+    }
+    .links a:hover{border-color:var(--line); background:rgba(255,255,255,.03)}
+    .cta{
+      padding:10px 14px;
+      background: linear-gradient(135deg, rgba(111,241,224,.92), rgba(111,241,224,.65));
+      color:#0b1416;
+      border-radius:14px;
+      font-weight:800;
+      box-shadow: 0 12px 30px rgba(111,241,224,.25);
+      border:1px solid rgba(111,241,224,.55);
+      transition: all 0.3s ease;
+    }
+    .cta:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 16px 35px rgba(111,241,224,.35);
+    }
+    .hero{
+      padding:54px 0 30px;
+      position:relative;
+      z-index:1;
+    }
+    .heroGrid{
+      display:grid; gap:18px;
+      grid-template-columns: 1.15fr .85fr;
+      align-items:stretch;
+    }
+    .panel{
+      background: rgba(15,30,33,.85);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(5px);
+    }
+    .heroMain{padding:28px}
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid rgba(199,167,106,.35);
+      background: rgba(199,167,106,.12);
+      color: rgba(233,242,243,.96);
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    h1{
+      margin:14px 0 10px;
+      font-size:42px; line-height:1.05;
+      letter-spacing:-.02em;
+      text-shadow: 0 2px 10px rgba(0,0,0,.3);
+    }
+    .sub{
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.55;
+      margin:0 0 16px;
+      max-width:60ch;
+    }
+    .pillRow{display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 0}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:9px 12px; border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      font-size:13px; color:rgba(233,242,243,.92);
+      transition: all 0.3s ease;
+    }
+    .pill:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.2);
+      border-color: rgba(232,216,197,.3);
+    }
+    .pill .dot{width:10px; height:10px; border-radius:50%;}
+    .dot.ok{background:rgba(110,231,183,.9)}
+    .dot.gold{background:rgba(199,167,106,.95)}
+    .dot.blue{background:rgba(111,241,224,.55)}
+    .heroSide{
+      display:grid;
+      grid-template-rows: auto 1fr;
+    }
+    .sideTop{
+      padding:18px 18px 0;
+      display:flex; gap:10px; flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .header-img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:14px;
+      margin-bottom:12px;
+      border:1px solid rgba(233,242,243,.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    }
+    .background-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin: 30px 0;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      box-shadow: 0 15px 40px rgba(0,0,0,.4);
+    }
+    .iconPh{
+      display:flex; align-items:center; gap:10px;
+      border:1px dashed rgba(233,242,243,.25);
+      color:rgba(233,242,243,.85);
+      background: rgba(255,255,255,.02);
+      padding:10px 12px;
+      border-radius:14px;
+      font-size:12px;
+    }
+    .iconPh img{width:18px; height:18px; opacity:.9}
+    .sideCard{
+      padding:18px;
+      display:grid; gap:12px;
+    }
+    .quote{
+      padding:16px;
+      border-radius:16px;
+      border:1px solid rgba(199,167,106,.25);
+      background: linear-gradient(135deg, rgba(199,167,106,.15), rgba(111,241,224,.08));
+      box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    }
+    .quote p{margin:0; color:rgba(233,242,243,.94); line-height:1.55}
+    .quote small{display:block; margin-top:10px; color:var(--muted)}
+    .grid2{display:grid; gap:18px; grid-template-columns: 1fr 1fr}
+    .section{padding:26px 0; position:relative; z-index:1}
+    .section h2{
+      font-size:22px; margin:0 0 12px;
+      letter-spacing:-.01em;
+      text-shadow: 0 2px 8px rgba(0,0,0,.2);
+    }
+    .lead{color:var(--muted); margin:0 0 18px; line-height:1.7}
+    .cards{display:grid; gap:16px; grid-template-columns: repeat(12, 1fr)}
+    .card{
+      grid-column: span 6;
+      padding:16px;
+      background: rgba(15,30,33,.75);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 40px rgba(0,0,0,.3);
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(0,0,0,.4);
+      border-color: rgba(232,216,197,.2);
+    }
+    .card h3{margin:0 0 8px; font-size:16px}
+    .card p{margin:0; color:var(--muted); line-height:1.6; font-size:14px}
+    .badgeRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .badge{
+      font-size:12px; color:rgba(233,242,243,.9);
+      padding:8px 10px; border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      transition: all 0.3s ease;
+    }
+    .badge:hover{
+      transform: scale(1.05);
+      border-color: rgba(232,216,197,.3);
+      background: rgba(232,216,197,.08);
+    }
+
+    .productGrid{
+      display:grid; gap:16px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .product{
+      grid-column: span 6;
+      overflow:hidden;
+      border-radius: var(--radius);
+      border:1px solid rgba(233,242,243,.10);
+      background: rgba(15,30,33,.65);
+      box-shadow: var(--shadow);
+      display:grid;
+      grid-template-rows: auto auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 25px 60px rgba(0,0,0,.5);
+      border-color: rgba(232,216,197,.2);
+    }
+    .product .img{
+      position:relative;
+      background: radial-gradient(600px 280px at 20% 20%, rgba(199,167,106,.25), transparent 60%),
+                  radial-gradient(600px 280px at 80% 30%, rgba(111,241,224,.15), transparent 60%),
+                  rgba(6,16,18,.65);
+      display:block;
+      padding:0;
+      overflow:hidden;
+      height: 280px;
+    }
+    .product img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: drop-shadow(0 20px 35px rgba(0,0,0,.45));
+      transition: transform 0.5s ease;
+    }
+    .product:hover img{
+      transform: scale(1.03);
+    }
+    .product .body{padding:16px}
+    .meta{
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    .meta strong{letter-spacing:.08em; font-size:12px}
+    .meta span{color:var(--muted); font-size:12px}
+    .list{
+      margin:10px 0 0; padding:0; list-style:none;
+      display:grid; gap:8px;
+    }
+    .list li{
+      display:flex; gap:10px; align-items:flex-start;
+      color:rgba(233,242,243,.92); font-size:13px; line-height:1.5;
+    }
+    .tick{
+      width:18px; height:18px; border-radius:6px;
+      border:1px solid rgba(110,231,183,.35);
+      background: rgba(110,231,183,.12);
+      display:grid; place-items:center;
+      margin-top:1px;
+      flex:0 0 18px;
+    }
+    .tick:before{
+      content:"✓";
+      color:rgba(110,231,183,.95);
+      font-weight:900;
+      font-size:12px;
+      line-height:1;
+    }
+
+    .standards{
+      display:grid; gap:16px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .std{
+      grid-column: span 4;
+      padding:16px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: rgba(15,30,33,.65);
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease;
+    }
+    .std:hover{
+      transform: translateY(-3px);
+      border-color: rgba(232,216,197,.2);
+    }
+    .std .head{display:flex; gap:10px; align-items:center; margin-bottom:8px}
+    .std .head .emoji{font-size:22px; opacity:.9}
+    .std h4{margin:0; font-size:14px}
+    .std p{margin:8px 0 0; color:var(--muted); line-height:1.6; font-size:13px}
+
+    .blacklist{
+      padding:16px;
+      border-radius: var(--radius);
+      border:1px solid rgba(199,167,106,.3);
+      background: linear-gradient(135deg, rgba(199,167,106,.15), rgba(255,255,255,.03));
+      box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    }
+    .blacklist ul{
+      margin:10px 0 0; padding-left:18px;
+      color:rgba(233,242,243,.92);
+      line-height:1.7;
+      font-size:13px;
+    }
+    footer{
+      border-top:1px solid var(--line);
+      padding:22px 0 40px;
+      color:var(--muted);
+      font-size:13px;
+      background: rgba(6,16,18,.8);
+      backdrop-filter: blur(10px);
+      position:relative;
+      z-index:1;
+    }
+    .footGrid{
+      display:grid; gap:16px;
+      grid-template-columns: 1.3fr .7fr;
+      align-items:start;
+    }
+    .smallcaps{letter-spacing:.08em; text-transform:uppercase; font-size:12px; color:rgba(233,242,243,.78)}
+    .contactBox{
+      padding:16px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: rgba(15,30,33,.65);
+      backdrop-filter: blur(5px);
+    }
+    .contactBox a{
+      display:inline-block;
+      margin-top:8px;
+      color:rgba(233,242,243,.92);
+      border-bottom:1px dashed rgba(233,242,243,.35);
+      padding-bottom:2px;
+      transition: all 0.3s ease;
+    }
+    .contactBox a:hover{
+      color:var(--clay-beige);
+      border-bottom-color:var(--clay-beige);
+    }
+    .distribution-link{
+      color:var(--cyan);
+      text-decoration:none;
+      border-bottom:1px dashed rgba(111,241,224,.4);
+      padding-bottom:1px;
+      transition: all 0.3s ease;
+    }
+    .distribution-link:hover{
+      color:var(--clay-beige);
+      border-bottom-color:var(--clay-beige);
+    }
+
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns: 1fr}
+      .product{grid-column: span 12}
+      .card{grid-column: span 12}
+      .std{grid-column: span 12}
+      .footGrid{grid-template-columns: 1fr}
+      h1{font-size:34px}
+      .product .img{height:240px}
+      .background-image{height:200px; margin:20px 0}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Éléments d'effets visuels -->
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="glow"></div>
+  <div class="glow"></div>
+
+  <!-- H1 principal pour SEO -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand">
+          <div class="mark">
+            <img src="logo.png" alt="Missy Soga - Logo marque dermo-cosmétique française" />
+          </div>
+          <div>
+            <strong>MISSY SOGA</strong>
+            <span>Distribué sur • <a href="https://www.klscosmetics.com" target="_blank" class="distribution-link">www.klscosmetics.com</a></span>
+          </div>
+        </div>
+
+        <div class="links">
+          <a href="#approche">Approche</a>
+          <a href="#histoire">Historique</a>
+          <a href="#produits">Produits</a>
+          <a href="#blackstone">BLACKSTONE</a>
+          <a href="#standards">Standards</a>
+          <a href="#pharma">Pharmacie</a>
+          <a class="cta" href="#contact">Demander un kit / Devis</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="heroGrid">
+        <div class="panel heroMain">
+          <div class="kicker">
+            <span class="dot gold" style="width:10px;height:10px;border-radius:50%;display:inline-block;"></span>
+            Soins essentiels • Tolérance élevée • Efficacité lisible
+          </div>
+
+          <!-- H1 pour SEO -->
+          <h1>Soins visage dermo-cosmétiques pour peaux sensibles</h1>
+          <p class="sub">
+            Missy Soga est une marque dermo-cosmétique orientée pharmacie :
+            des formules sobres, conçues pour accompagner les peaux sensibles et les phases de fragilisation
+            (inconfort, rougeurs, déséquilibre), avec une exigence de clarté et de sécurité d'usage.
+          </p>
+
+          <div class="pillRow">
+            <div class="pill"><span class="dot ok"></span> Rituels de barrière cutanée</div>
+            <div class="pill"><span class="dot blue"></span> Texture & sensorialité maîtrisées</div>
+            <div class="pill"><span class="dot gold"></span> Positionnement officinal</div>
+          </div>
+          
+          <!-- Image back.png ajoutée ici -->
+          <img src="back.png" alt="Exigence de clarté et de sécurité d'usage" class="background-image" />
+        </div>
+
+        <aside class="panel heroSide">
+          <div class="sideTop">
+            <!-- Image header PNG remplaçant les 4 points -->
+            <img src="header.png" alt="Missy Soga - Soins dermo-cosmétiques pour peaux sensibles" class="header-img" />
+          </div>
+
+          <div class="sideCard">
+            <div class="quote">
+              <p>
+                "Le soin naît de l’observation des états cutanés fragilisés.
+Des formules claires, utiles, pensées pour respecter la peau et s’intégrer à une pratique officinale."
+              </p>
+              <small>— MISSY SOGA, direction de création</small>
+            </div>
+
+            <div class="grid2">
+              <div class="card" style="margin:0; box-shadow:none;">
+                <h3>Origine</h3>
+                <p>
+                  Né à Aix-en-Provence (2017), l'ADN Missy Soga s'est construit sur des gestes de réparation :
+                  apaiser, équilibrer, renforcer — puis élargir naturellement au soin visage.
+                </p>
+              </div>
+              <div class="card" style="margin:0; box-shadow:none;">
+                <h3>Promesse</h3>
+                <p>
+                  Des formules conçues pour s'intégrer à une routine simple :
+                  nettoyer, protéger, calmer, maintenir l'hydratation — sans sur-stimulation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- H2 pour SEO : Une approche dermo inspirée de la pharmacie -->
+  <section id="approche" class="section">
+    <div class="wrap">
+      <h2>Une approche dermo inspirée de la pharmacie</h2>
+      <p class="lead">
+        Une écriture produit inspirée des codes officinaux : bénéfice clair, usage précis, tolérance prioritaire,
+        et un discours pédagogique (pas de sur-promesses).
+      </p>
+
+      <div class="cards">
+        <!-- H3 pour SEO : Barrière cutanée et confort quotidien -->
+        <div class="card">
+          <h3>Barrière cutanée et confort quotidien</h3>
+          <p>
+            Chaque soin est pensé comme un "support" : réduire l'inconfort, limiter les pics de réactivité,
+            et aider la peau à retrouver une stabilité quotidienne.
+          </p>
+          <div class="badgeRow">
+            <span class="badge">Peaux sensibles</span>
+            <span class="badge">Rougeurs</span>
+            <span class="badge">Inconfort</span>
+          </div>
+        </div>
+
+        <!-- H3 pour SEO : Minimalisme et sécurité d'usage -->
+        <div class="card">
+          <h3>Minimalisme et sécurité d'usage</h3>
+          <p>
+            Moins d'effet "catalogue", plus de cohérence : peu de références, mais des piliers solides
+            (nettoyer / hydrater / protéger / apaiser) et des protocoles faciles à recommander.
+          </p>
+          <div class="badgeRow">
+            <span class="badge">Routine courte</span>
+            <span class="badge">Lisibilité</span>
+            <span class="badge">Confiance</span>
+          </div>
+        </div>
+
+        <!-- H3 pour SEO : Texture maîtrisée pour peaux fragiles -->
+        <div class="card">
+          <h3>Texture maîtrisée pour peaux fragiles</h3>
+          <p>
+            Sensorialité sobre : textures non agressives, confort immédiat, fini propre — adaptées
+            à une utilisation quotidienne, y compris quand la peau est "sur-sollicitée".
+          </p>
+          <div class="badgeRow">
+            <span class="badge">Confort</span>
+            <span class="badge">Usage quotidien</span>
+            <span class="badge">Tolérance</span>
+          </div>
+        </div>
+
+        <!-- H3 pour SEO : Marque de conseil dermo-cosmétique -->
+        <div class="card">
+          <h3>Marque de conseil dermo-cosmétique</h3>
+          <p>
+            Missy Soga se construit autour du conseil : comment appliquer, combien, à quelle fréquence,
+            quelles associations, et quand simplifier la routine.
+          </p>
+          <div class="badgeRow">
+            <span class="badge">Pédagogie</span>
+            <span class="badge">Comptoir</span>
+            <span class="badge">Protocoles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- H2 pour SEO : Missy Soga, marque dermo-cosmétique française -->
+  <section id="histoire" class="section">
+    <div class="wrap">
+      <h2>Missy Soga, marque dermo-cosmétique française</h2>
+      <p class="lead">
+        L'évolution d'une marque née d'une conviction simple : le soin doit précéder le produit,
+        et la confiance se construit dans la durée.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>2017 • Naissance à Aix-en-Provence</h3>
+          <p>
+            Création de Missy Soga par Cyril Ragonet, avec pour ambition de proposer
+            des soins dermo-cosmétiques pensés pour les pharmacies et leurs clients.
+            L'accent est mis sur la tolérance et la lisibilité des formules.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>2018-2019 • Développement des premiers piliers</h3>
+          <p>
+            Mise au point des références fondatrices : nettoyants doux, crèmes barrières,
+            soins apaisants. Chaque produit est conçu pour s'intégrer dans des routines
+            simples et recommandables au comptoir.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>2020-2021 • Consolidation du positionnement pharma</h3>
+          <p>
+            Structuration de la gamme autour de quatre axes : nettoyer, hydrater, protéger, apaiser.
+            Développement des supports conseil et des protocoles d'usage pour les pharmaciens.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>2022-2023 • Élargissement et innovation</h3>
+          <p>
+            Introduction de nouvelles textures et formats, tout en conservant l'ADN minimaliste.
+            Lancement de BLACKSTONE, une approche radicalement différente du soin cutané.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- H2 pour SEO : Des soins visage pensés pour la tolérance cutanée -->
+  <section id="produits" class="section">
+    <div class="wrap">
+      <h2>Des soins visage pensés pour la tolérance cutanée</h2>
+      <p class="lead">
+        Des références conçues comme des piliers : peu de produits, mais chacun avec une fonction claire
+        et une place définie dans la routine.
+      </p>
+
+      <div class="productGrid">
+        <article class="product">
+          <div class="img">
+            <img src="product08.png" alt="Missy Soga Face Barrier Ritual - Soin barrière pour peaux sensibles" />
+          </div>
+          <div class="body">
+            <div class="meta">
+              <strong>FACE BARRIER RITUAL</strong>
+              <span>Format pot • routine barrière</span>
+            </div>
+            <ul class="list">
+              <li><span class="tick"></span><span>Confort immédiat : apaise la sensation de tiraillement et d'échauffement.</span></li>
+              <li><span class="tick"></span><span>Hydratation de maintien : soutient la peau au quotidien, sans lourdeur.</span></li>
+              <li><span class="tick"></span><span>Rituel "pharma-luxe" : une gestuelle simple, recommandable au comptoir.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="img">
+            <img src="product09.png" alt="Missy Soga Calming & Balancing Cream - Crème apaisante pour peaux réactives" />
+          </div>
+          <div class="body">
+            <div class="meta">
+              <strong>CALMING & BALANCING CREAM</strong>
+              <span>Format tube • usage quotidien</span>
+            </div>
+            <ul class="list">
+              <li><span class="tick"></span><span>Peaux réactives : routine courte, bénéfices lisibles, application facile.</span></li>
+              <li><span class="tick"></span><span>Fini propre : texture pensée pour ne pas "étouffer" la peau.</span></li>
+              <li><span class="tick"></span><span>Compatible conseil : s'intègre à d'autres routines (SPF, traitements, etc.).</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- H2 pour SEO : Blackstone, rituel minéral de Missy Soga -->
+  <section id="blackstone" class="section">
+    <div class="wrap">
+      <h2>Blackstone, rituel minéral de Missy Soga</h2>
+      <p class="lead">
+        Une réponse radicalement différente aux peaux saturées : non pas agir plus, mais agir moins.
+        Un soin qui crée les conditions du calme plutôt qu'il n'impose un résultat.
+      </p>
+
+      <div class="productGrid">
+        <article class="product">
+          <div class="img">
+            <img src="product06.png" alt="Missy Soga Blackstone - Soin minéral pour peaux saturées et sensibles" />
+          </div>
+          <div class="body">
+            <div class="meta">
+              <strong>BLACKSTONE • SOIN MINÉRAL</strong>
+              <span>Texture pâte à l'eau • activation lente</span>
+            </div>
+            <ul class="list">
+              <li><span class="tick"></span><span>Formule neutre : sans parfum, sans agents sensibilisants, sans actifs irritants.</span></li>
+              <li><span class="tick"></span><span>Activation lente : transformation progressive au contact de l'eau, sans réaction brutale.</span></li>
+              <li><span class="tick"></span><span>Temps intégré : le rythme d'application fait partie du soin, rien ne doit être forcé.</span></li>
+            </ul>
+            <div class="badgeRow">
+              <span class="badge">Peaux saturées</span>
+              <span class="badge">Sensibilité extrême</span>
+              <span class="badge">Phase de récupération</span>
+              <span class="badge">Approche minimaliste</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cards" style="margin-top: 30px;">
+        <div class="card">
+          <h3>I. Philosophie BLACKSTONE</h3>
+          <p>
+            La peau n'en peut plus d'être sollicitée. Trop de produits, trop de gestes, trop de promesses superposées
+            ont fini par brouiller ses repères naturels. BLACKSTONE est né de ce constat. Non pour agir plus vite,
+            mais pour agir moins. Une matière sombre, minérale, stable, à laquelle on n'a rien ajouté de superflu.
+            Un soin qui ne cherche pas à imposer un résultat, mais à créer les conditions du calme.
+          </p>
+          <p>
+            Le geste est volontairement simple. La poudre, l'eau, le temps. Rien d'autre. Dans cette retenue,
+            la peau cesse de se défendre. Elle ralentit. Elle retrouve un rythme plus juste.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>II. Mémoire minérale</h3>
+          <p>
+            Avant les formules complexes et les protocoles accélérés, la peau entretenait un lien direct avec la matière.
+            Les minéraux n'étaient pas des actifs, mais des présences. Ils n'agissaient pas. Ils accompagnaient.
+          </p>
+          <p>
+            BLACKSTONE s'inscrit dans cette mémoire ancienne. À l'état sec, la matière reste immobile. Elle n'interagit pas.
+            Elle attend. Ce n'est qu'au contact de l'eau que le processus commence, lentement, sans réaction brutale.
+            La transformation n'est pas spectaculaire. La texture s'assombrit, se densifie, s'étale.
+            Le temps devient un élément du soin.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>III. Approche dermatologique</h3>
+          <p>
+            D'un point de vue dermatologique, les peaux les plus fragiles sont souvent celles qui ont été le plus exposées
+            à des interventions répétées. L'altération de la barrière cutanée, l'inflammation de bas grade et l'hyperréactivité
+            sont fréquemment entretenues par l'accumulation de produits et de stimuli.
+          </p>
+          <p>
+            BLACKSTONE adopte une approche inverse. Sa base minérale reste fonctionnellement neutre tant qu'elle n'est pas activée.
+            Elle ne contient ni parfum, ni agents sensibilisants connus, ni actifs destinés à provoquer une réponse immédiate de la peau.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>IV. Protocole d'usage</h3>
+          <p>
+            Appliquer BLACKSTONE sur peau propre et légèrement humide. Laisser la matière se transformer au contact de l'eau
+            pendant 30 à 60 secondes avant d'étaler uniformément. Masser délicatement jusqu'à absorption complète.
+            Utiliser une à deux fois par jour selon le niveau de saturation cutanée.
+          </p>
+          <p>
+            Compatible avec les routines existantes, mais recommandé en monothérapie pendant les phases de récupération
+            (7 à 14 jours). Ne pas associer à des actifs exfoliants ou stimulants pendant la cure.
+          </p>
+          <div class="badgeRow">
+            <span class="badge">Monothérapie recommandée</span>
+            <span class="badge">Cure de 7-14 jours</span>
+            <span class="badge">Application sur peau humide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- H2 pour SEO : Routines courtes et lisibles pour la peau -->
+  <section id="standards" class="section">
+    <div class="wrap">
+      <h2>Routines courtes et lisibles pour la peau</h2>
+      <p class="lead">
+        Un socle "pharmacie" : priorité à la sécurité d'usage, à la tolérance, et à la cohérence de gamme.
+      </p>
+
+      <div class="standards">
+        <div class="std">
+          <div class="head">
+            <span class="emoji">🛡️</span>
+            <h4>Tolérance prioritaire</h4>
+          </div>
+          <p>Des choix d'ingrédients et de textures qui minimisent l'irritation, pour des peaux fragiles ou sensibilisées.</p>
+        </div>
+
+        <div class="std">
+          <div class="head">
+            <span class="emoji">📋</span>
+            <h4>Lisibilité clinique</h4>
+          </div>
+          <p>Des bénéfices décrits simplement : apaiser, hydrater, protéger — avec des protocoles d'usage précis.</p>
+        </div>
+
+        <div class="std">
+          <div class="head">
+            <span class="emoji">🌱</span>
+            <h4>Responsable & sobre</h4>
+          </div>
+          <p>Packaging cohérent avec le positionnement : esthétique propre, information claire, logique de gamme.</p>
+        </div>
+      </div>
+
+      <div class="blacklist" style="margin-top:16px;">
+        <h3 style="margin:0 0 8px; font-size:16px;">Engagements de formulation</h3>
+        <p style="margin:0; color:var(--muted); line-height:1.6; font-size:13px;">
+          Une charte claire qui définit ce que Missy Soga ne fait pas, par conviction et par respect pour la peau.
+        </p>
+        <ul>
+          <li>Sans ingrédients inutiles dans une routine peaux sensibles (approche "moins mais mieux").</li>
+          <li>Sans sur-parfumage (priorité à la tolérance et à l'usage quotidien).</li>
+          <li>Sans storytelling "ingrédient miracle" : priorité aux fonctions (barrière, hydratation, apaisement).</li>
+          <li>Sans promesses irréalistes : des bénéfices mesurables et des attentes réalistes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="pharma" class="section">
+    <div class="wrap">
+      <h2>Orientation pharmacie</h2>
+      <p class="lead">
+        Une marque pensée pour être comprise et recommandée : au comptoir, sur une fiche conseil, ou sur un site e-commerce.
+        Le discours est "diagnostic léger → solution simple → routine maintenable".
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Conseil & protocoles</h3>
+          <p>
+            Chaque soin doit pouvoir être accompagné de 3 lignes de recommandation :
+            quand l'utiliser, comment l'appliquer, et quoi éviter d'associer si la peau est sensibilisée.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Gamme complète, architecture claire</h3>
+          <p>
+            Nettoyant doux → crème barrière → soin ciblé (rougeurs / inconfort / imperfections) → protection (SPF).
+            Peu de références, mais des piliers robustes.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Preuve & transparence</h3>
+          <p>
+            Le site doit afficher : usage, public, précautions, bénéfices attendus, et engagements.
+            La preuve se raconte sans "buzzwords".
+          </p>
+        </div>
+        <div class="card">
+          <h3>Identité "pharma-luxe"</h3>
+          <p>
+            Un design premium, mais jamais opaque : typographie propre, espaces respirants, et un vocabulaire de soin,
+            pas de mode.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="footGrid">
+        <div>
+          <div class="smallcaps">MISSY SOGA</div>
+          <p style="margin:10px 0 0; line-height:1.7;">
+            Marque dermo-cosmétique française créée par <strong>Cyril Ragonet</strong>.  
+            ADN : le soin utile, la tolérance, la routine courte, et une approche inspirée de la pharmacie.
+          </p>
+          <p style="margin:10px 0 0; line-height:1.7;">
+            Une philosophie simple : accompagner la peau dans ses phases de fragilité,
+            avec des formules lisibles et des protocoles recommandables.
+          </p>
+        </div>
+
+        <div class="contactBox">
+          <div class="smallcaps">Contact professionnel</div>
+          <p style="margin:10px 0 0; line-height:1.7;">
+            Pour les pharmacies, partenaires et demandes professionnelles :
+            demande de kit, devis, ou dossier technique.
+          </p>
+          <a href="mailto:cyril.ragonet@gmail.com">cyril.ragonet@gmail.com</a>
+          <div style="margin-top:10px; color:rgba(233,242,243,.85); font-size:12px;">
+            © <span id="year"></span> Missy Soga • Tous droits réservés
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    
+    // Animation supplémentaire pour les étoiles
+    document.addEventListener('DOMContentLoaded', function() {
+      const stars = document.querySelectorAll('.star');
+      stars.forEach((star, index) => {
+        // Animation aléatoire pour plus de naturel
+        const randomDelay = Math.random() * 5;
+        const randomDuration = 2 + Math.random() * 3;
+        star.style.animationDelay = `${randomDelay}s`;
+        star.style.animationDuration = `${randomDuration}s`;
+        
+        // Certaines étoiles apparaissent/disparaissent
+        if (index % 3 === 0) {
+          star.style.animation = `twinkle ${randomDuration}s ${randomDelay}s infinite alternate`;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
