@@ -11,6 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TV8RQ3GD');</script>
 <!-- End Google Tag Manager -->
   <title>Missy Soga | Soins visage dermo-cosmétiques pour peaux sensibles</title>
+  <link rel="icon" href="logo.png" type="image/png">
   <meta name="description" content="Missy Soga développe des soins visage dermo-cosmétiques inspirés de la pharmacie : formules sobres, haute tolérance, routines courtes pour peaux sensibles et fragilisées." />
   <style>
     :root{
@@ -29,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       --clay-gold: #d4b483;
       --clay-green: #a8b8a8;
       --clay-beige: #e8d8c5;
-      --aix-green: #6ff1e0; /* Vert pour Aix en Provence */
+      --aix-green: #6ff1e0;
     }
     *{box-sizing:border-box}
     body{
@@ -37,9 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       color:var(--text);
       background:
-        /* Ciel noir nuageux */
         linear-gradient(135deg, #0a1012 0%, #1a2528 25%, #0a1012 50%, #1a2528 75%, #0a1012 100%),
-        /* Étoiles fines */
         radial-gradient(2px 2px at 10% 15%, rgba(212,180,131,.8), transparent 50%),
         radial-gradient(1.5px 1.5px at 25% 40%, rgba(168,184,168,.6), transparent 50%),
         radial-gradient(2px 2px at 40% 25%, rgba(232,216,197,.7), transparent 50%),
@@ -51,13 +50,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         radial-gradient(1.5px 1.5px at 55% 65%, rgba(232,216,197,.4), transparent 50%),
         radial-gradient(1px 1px at 70% 80%, rgba(212,180,131,.2), transparent 50%),
         radial-gradient(2px 2px at 90% 60%, rgba(168,184,168,.3), transparent 50%),
-        /* Effets de brillance */
         radial-gradient(400px 400px at 0% 0%, rgba(232,216,197,.03), transparent 50%),
         radial-gradient(300px 300px at 100% 100%, rgba(212,180,131,.02), transparent 50%),
-        /* Nuages subtils */
         radial-gradient(500px 200px at 20% 10%, rgba(159,180,184,.05), transparent 70%),
         radial-gradient(400px 150px at 80% 30%, rgba(159,180,184,.04), transparent 60%),
-        /* Dégradé principal */
         linear-gradient(180deg, #061012 0%, var(--bg) 45%, #061012 100%);
       background-attachment: fixed;
       background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
@@ -66,7 +62,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       overflow-x: hidden;
     }
     
-    /* Animation des étoiles */
     @keyframes twinkle {
       0%, 100% { opacity: 0.2; }
       50% { opacity: 0.8; }
@@ -82,7 +77,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       50% { opacity: 0.3; }
     }
     
-    /* Animation du halo du logo */
     @keyframes logoHalo {
       0%, 100% { 
         opacity: 0;
@@ -98,7 +92,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     }
     
-    /* Étoiles animées */
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
     .star {
       position: fixed;
       background: rgba(232,216,197,.6);
@@ -197,7 +195,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: var(--clay-gold);
     }
     
-    /* Brillance intermittente */
     .glow {
       position: fixed;
       width: 200px;
@@ -224,7 +221,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     a{color:inherit; text-decoration:none}
     .wrap{max-width:var(--max); margin:0 auto; padding:0 20px; position:relative; z-index:1}
     
-    /* Topbar et navigation */
     .topbar{
       position:sticky; top:0; z-index:100;
       backdrop-filter: blur(10px);
@@ -242,12 +238,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       position: relative;
     }
     
-    /* Halo autour du logo */
     .brand::after {
       content: '';
       position: absolute;
       top: 50%;
-      left: 26px; /* Position ajustée pour centrer sur le logo */
+      left: 26px;
       transform: translate(-50%, -50%);
       width: 60px;
       height: 60px;
@@ -273,14 +268,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .brand strong{letter-spacing:.08em; font-weight:800; font-size:13px; position: relative; z-index: 2;}
     .brand span{
       display:block; 
-      color:var(--aix-green); /* Vert pour Aix en Provence */
+      color:var(--aix-green);
       font-size:12px; 
       margin-top:2px;
       position: relative;
       z-index: 2;
     }
     
-    /* Navigation links - Responsive */
     .links{
       display:flex; 
       gap:12px; 
@@ -616,6 +610,119 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-bottom-color:var(--clay-beige);
     }
 
+    /* Cookie Banner */
+    .cookie-banner{
+      position:fixed; left:16px; right:16px; bottom:16px;
+      z-index:9999;
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+      padding:14px 16px;
+      border-radius:var(--radius);
+      background: rgba(15,30,33,.95);
+      border: 1px solid rgba(233,242,243,.15);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+      animation: slideUp 0.4s ease-out;
+    }
+    
+    .cookie-left{
+      display:flex; 
+      gap:12px; 
+      align-items:flex-start; 
+      min-width:0;
+      flex: 1;
+    }
+    
+    .cookie-ico{
+      width:42px; height:42px; flex:0 0 42px;
+      border-radius:12px;
+      background: linear-gradient(135deg, rgba(199,167,106,.15), rgba(111,241,224,.08));
+      border: 1px solid rgba(233,242,243,.15);
+      display:grid; place-items:center;
+      overflow:hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,.2);
+    }
+    
+    .cookie-ico img{
+      width:24px; 
+      height:24px; 
+      object-fit:contain; 
+      opacity:.9;
+    }
+    
+    .cookie-text{
+      min-width:0; 
+      flex:1;
+    }
+    
+    .cookie-title{
+      margin:0; 
+      font-weight:800; 
+      letter-spacing:.02em;
+      font-size:13px; 
+      color:var(--text);
+    }
+    
+    .cookie-desc{
+      margin:6px 0 0; 
+      font-size:12px; 
+      line-height:1.45;
+      color:var(--muted);
+    }
+    
+    .cookie-desc a{
+      color:var(--cyan);
+      border-bottom:1px dashed rgba(111,241,224,.4);
+      text-decoration:none;
+      padding-bottom:1px;
+      transition: all 0.3s ease;
+    }
+    
+    .cookie-desc a:hover{
+      color:var(--clay-beige);
+      border-bottom-color:var(--clay-beige);
+    }
+    
+    .cookie-actions{
+      display:flex; 
+      gap:10px; 
+      align-items:center; 
+      flex:0 0 auto;
+    }
+    
+    .cookie-btn{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: rgba(233,242,243,.92);
+      padding:10px 14px;
+      border-radius:14px;
+      font-size:12px;
+      font-weight:800;
+      cursor:pointer;
+      transition: all 0.3s ease;
+      white-space:nowrap;
+      border: none;
+      font-family: inherit;
+    }
+    
+    .cookie-btn:hover{
+      transform: translateY(-2px);
+      border-color: rgba(232,216,197,.3);
+      background: rgba(255,255,255,.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,.2);
+    }
+    
+    .cookie-btn.primary{
+      background: linear-gradient(135deg, rgba(111,241,224,.92), rgba(111,241,224,.65));
+      color:#0b1416;
+      border:1px solid rgba(111,241,224,.55);
+      box-shadow: 0 12px 30px rgba(111,241,224,.25);
+    }
+    
+    .cookie-btn.primary:hover{
+      background: linear-gradient(135deg, rgba(111,241,224,1), rgba(111,241,224,.72));
+      box-shadow: 0 16px 35px rgba(111,241,224,.35);
+    }
+
     /* Responsive Design */
     @media (max-width: 980px){
       .heroGrid{grid-template-columns: 1fr}
@@ -682,6 +789,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .pill {
         font-size: 12px;
         padding: 7px 10px;
+      }
+      
+      .cookie-banner{
+        flex-direction:column; 
+        align-items:stretch;
+        left:12px; right:12px; bottom:12px;
+        padding:16px;
+      }
+      
+      .cookie-actions{
+        justify-content:flex-end; 
+        width:100%;
+        margin-top:12px;
       }
     }
     
@@ -754,6 +874,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .pill {
         font-size: 11px;
         padding: 6px 8px;
+      }
+      
+      .cookie-ico{
+        width:36px; height:36px; flex:0 0 36px;
+      }
+      .cookie-ico img{width:20px; height:20px;}
+      .cookie-btn{
+        padding:9px 12px;
+        font-size:11px;
       }
     }
   </style>
@@ -1249,22 +1378,112 @@ Des formules claires, utiles, pensées pour respecter la peau et s'intégrer à 
     </div>
   </footer>
 
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Consentement cookies" hidden>
+    <div class="cookie-left">
+      <div class="cookie-ico">
+        <img src="cookie.png" alt="Cookie" loading="lazy" />
+      </div>
+      <div class="cookie-text">
+        <p class="cookie-title">Respect de votre vie privée</p>
+        <p class="cookie-desc">
+          Missy Soga utilise des cookies pour mesurer l'audience et améliorer votre expérience.
+          <a href="politique-cookies.html" aria-label="En savoir plus sur notre politique de cookies">En savoir plus</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="cookie-actions">
+      <button class="cookie-btn" id="cookieReject" type="button" aria-label="Refuser les cookies">Refuser</button>
+      <button class="cookie-btn primary" id="cookieAccept" type="button" aria-label="Accepter les cookies">Accepter</button>
+    </div>
+  </div>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     
-    // Animation supplémentaire pour les étoiles
+    // Animation des étoiles
     document.addEventListener('DOMContentLoaded', function() {
       const stars = document.querySelectorAll('.star');
       stars.forEach((star, index) => {
-        // Animation aléatoire pour plus de naturel
         const randomDelay = Math.random() * 5;
         const randomDuration = 2 + Math.random() * 3;
         star.style.animationDelay = `${randomDelay}s`;
         star.style.animationDuration = `${randomDuration}s`;
         
-        // Certaines étoiles apparaissent/disparaissent
         if (index % 3 === 0) {
           star.style.animation = `twinkle ${randomDuration}s ${randomDelay}s infinite alternate`;
+        }
+      });
+      
+      // Gestion des cookies
+      const KEY = "ms_cookie_consent_v1";
+      const banner = document.getElementById("cookieBanner");
+      const acceptBtn = document.getElementById("cookieAccept");
+      const rejectBtn = document.getElementById("cookieReject");
+
+      function getConsent(){ return localStorage.getItem(KEY); }
+      
+      function setConsent(value){
+        localStorage.setItem(KEY, value);
+        
+        // Animation de sortie
+        banner.style.animation = 'slideUp 0.3s ease-out reverse';
+        setTimeout(() => {
+          banner.hidden = true;
+          banner.style.animation = '';
+        }, 300);
+        
+        // Gestion des scripts analytics
+        if(value === "accepted"){
+          enableAnalytics();
+        } else {
+          disableAnalytics();
+        }
+        
+        // Event pour GTM
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ 
+          event: "cookie_consent", 
+          cookie_consent: value,
+          timestamp: new Date().toISOString()
+        });
+      }
+      
+      function enableAnalytics(){
+        console.log("Cookies acceptés - Analytics activés");
+        if(window.google_tag_manager){
+          console.log("Google Tag Manager activé");
+        }
+      }
+      
+      function disableAnalytics(){
+        console.log("Cookies refusés - Analytics désactivés");
+        document.cookie.split(";").forEach(function(c) {
+          document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+        });
+      }
+
+      // Afficher la bannière après un délai
+      setTimeout(() => {
+        if(!getConsent()){
+          banner.hidden = false;
+          acceptBtn.focus();
+        }
+      }, 1500);
+
+      acceptBtn.addEventListener("click", function(){ 
+        setConsent("accepted"); 
+      });
+      
+      rejectBtn.addEventListener("click", function(){ 
+        setConsent("rejected"); 
+      });
+      
+      // Fermer avec la touche Échap
+      document.addEventListener('keydown', function(e) {
+        if(e.key === 'Escape' && !banner.hidden) {
+          setConsent("rejected");
         }
       });
     });
