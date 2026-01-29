@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de cookies - Missy Soga</title>
+    <style>
+        :root {
+            --bg: #0b1416;
+            --card: #0f1e21;
+            --muted: #9fb4b8;
+            --text: #e9f2f3;
+            --gold: #c7a76a;
+            --cyan: #6ff1e0;
+            --line: rgba(233,242,243,.10);
+            --radius: 18px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background: var(--card);
+            border-radius: var(--radius);
+            border: 1px solid var(--line);
+            box-shadow: 0 20px 60px rgba(0,0,0,.4);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--line);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .logo .mark {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(199,167,106,.55), rgba(111,241,224,.18));
+            border: 1px solid rgba(199,167,106,.35);
+            display: grid;
+            place-items: center;
+        }
+        
+        .logo strong {
+            font-size: 24px;
+            letter-spacing: .08em;
+            font-weight: 800;
+        }
+        
+        .logo span {
+            color: var(--cyan);
+            font-size: 14px;
+            margin-top: 2px;
+            display: block;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: var(--text);
+            letter-spacing: -.01em;
+        }
+        
+        .subtitle {
+            color: var(--muted);
+            font-size: 16px;
+        }
+        
+        .last-update {
+            color: var(--gold);
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        h2 {
+            color: var(--cyan);
+            margin: 30px 0 15px;
+            font-size: 22px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--line);
+        }
+        
+        h3 {
+            color: var(--text);
+            margin: 25px 0 10px;
+            font-size: 18px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: var(--muted);
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+            color: var(--muted);
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: rgba(111,241,224,.1);
+            border-left: 3px solid var(--cyan);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            color: var(--muted);
+        }
+        
+        th, td {
+            border: 1px solid var(--line);
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background: rgba(255,255,255,.03);
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            background: rgba(199,167,106,.08);
+            border: 1px solid rgba(199,167,106,.2);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .contact-info h3 {
+            color: var(--gold);
+            margin-top: 0;
+        }
+        
+        .contact-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-item strong {
+            color: var(--text);
+            min-width: 100px;
+        }
+        
+        a {
+            color: var(--cyan);
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(111,241,224,.4);
+            padding-bottom: 1px;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            padding: 10px 16px;
+            background: rgba(255,255,255,.04);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            border-color: rgba(232,216,197,.3);
+            background: rgba(255,255,255,.08);
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .contact-details {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .logo strong {
+                font-size: 20px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+   
+            </div>
+            <h1>Politique de cookies</h1>
+            <p class="subtitle">Dernière mise à jour : <span class="last-update">Q1 2026</span></p>
+        </div>
+        
+        <div class="content">
+            <h2>1. Introduction</h2>
+            <p>La présente politique de cookies a pour objectif de vous informer de manière claire et transparente sur l'utilisation des cookies et autres traceurs sur notre site internet <strong>missysoga.com</strong>, exploité par la marque Missy Soga.</p>
+            <p>Conformément à la réglementation française et européenne en vigueur, notamment le Règlement Général sur la Protection des Données (RGPD) et les directives de la Commission Nationale de l'Informatique et des Libertés (CNIL), nous nous engageons à respecter votre vie privée et à protéger vos données personnelles.</p>
+            
+            <div class="highlight">
+                <p><strong>En poursuivant votre navigation sur notre site, vous acceptez l'utilisation de cookies conformément à la présente politique. Vous pouvez à tout moment modifier vos préférences via notre outil de gestion des cookies ou les paramètres de votre navigateur.</strong></p>
+            </div>
+            
+            <h2>2. Qu'est-ce qu'un cookie ?</h2>
+            <p>Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, smartphone, tablette) lors de la consultation d'un site internet. Il contient des informations relatives à votre navigation et permet notamment de :</p>
+            <ul>
+                <li>Faciliter votre navigation et améliorer votre expérience utilisateur</li>
+                <li>Mémoriser vos préférences et paramètres</li>
+                <li>Mesurer l'audience de notre site et analyser le comportement des visiteurs</li>
+                <li>Personnaliser le contenu et les publicités affichés</li>
+                <li>Assurer la sécurité de notre site</li>
+            </ul>
+            <p>Les cookies sont gérés par votre navigateur internet et peuvent être supprimés à tout moment.</p>
+            
+            <h2>3. Types de cookies utilisés</h2>
+            <p>Nous utilisons différents types de cookies pour des finalités spécifiques :</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Catégorie</th>
+                        <th>Finalité</th>
+                        <th>Durée de conservation</th>
+                        <th>Obligatoire</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cookies essentiels</strong></td>
+                        <td>Assurer le fonctionnement technique du site, la sécurité, l'accès aux services</td>
+                        <td>Session ou 13 mois maximum</td>
+                        <td>Oui</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cookies de performance</strong></td>
+                        <td>Mesurer l'audience, analyser les statistiques de visite, améliorer nos services</td>
+                        <td>13 mois maximum</td>
+                        <td>Non</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cookies de fonctionnalité</strong></td>
+                        <td>Mémoriser vos préférences, personnaliser votre expérience</td>
+                        <td>13 mois maximum</td>
+                        <td>Non</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cookies marketing</strong></td>
+                        <td>Affichage de publicités ciblées, mesure de l'efficacité des campagnes</td>
+                        <td>13 mois maximum</td>
+                        <td>Non</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>4. Cookies tiers</h2>
+            <p>Certains cookies sont déposés par des services tiers que nous utilisons :</p>
+            
+            <h3>4.1 Google Analytics</h3>
+            <p>Nous utilisons Google Analytics pour analyser l'audience de notre site. Les données collectées sont anonymisées et utilisées uniquement à des fins statistiques.</p>
+            <ul>
+                <li><strong>Finalité :</strong> Analyse du trafic, mesure de l'audience, statistiques de navigation</li>
+                <li><strong>Données collectées :</strong> Pages consultées, durée de visite, provenance du trafic, type d'appareil</li>
+                <li><strong>Durée :</strong> 14 mois maximum</li>
+                <li><strong>Pays de traitement :</strong> États-Unis (avec garanties appropriées)</li>
+            </ul>
+            
+            <h3>4.2 Google Tag Manager</h3>
+            <p>Outil de gestion des tags utilisé pour déployer et gérer les différents scripts de tracking sur notre site.</p>
+            
+            <h2>5. Finalités du traitement</h2>
+            <p>Les données collectées via les cookies sont traitées pour les finalités suivantes :</p>
+            <ol>
+                <li><strong>Finalités statistiques et d'analyse :</strong>
+                    <ul>
+                        <li>Mesure de l'audience globale du site</li>
+                        <li>Analyse du comportement des visiteurs</li>
+                        <li>Optimisation technique et fonctionnelle</li>
+                        <li>Évaluation de la performance de notre communication</li>
+                    </ul>
+                </li>
+                <li><strong>Finalités marketing :</strong>
+                    <ul>
+                        <li>Personnalisation du contenu et des offres</li>
+                        <li>Affichage de publicités ciblées</li>
+                        <li>Mesure de l'efficacité des campagnes publicitaires</li>
+                        <li>Retargeting (remarketing)</li>
+                    </ul>
+                </li>
+                <li><strong>Finalités fonctionnelles :</strong>
+                    <ul>
+                        <li>Mémorisation de vos préférences linguistiques</li>
+                        <li>Gestion de votre panier d'achat</li>
+                        <li>Facilitation de la navigation</li>
+                        <li>Sécurisation des transactions</li>
+                    </ul>
+                </li>
+            </ol>
+            
+            <h2>6. Base légale du traitement</h2>
+            <p>Le traitement de vos données via les cookies est fondé sur :</p>
+            <ul>
+                <li><strong>Votre consentement</strong> pour les cookies non essentiels (performance, fonctionnalité, marketing)</li>
+                <li><strong>L'intérêt légitime</strong> pour les cookies essentiels au fonctionnement du site</li>
+                <li><strong>L'exécution d'un contrat</strong> pour les cookies nécessaires à la fourniture des services demandés</li>
+            </ul>
+            
+            <h2>7. Durée de conservation</h2>
+            <p>Conformément aux recommandations de la CNIL, la durée de conservation des cookies est de :</p>
+            <ul>
+                <li><strong>13 mois maximum</strong> pour les cookies non essentiels à compter de leur dépôt</li>
+                <li><strong>Durée de la session</strong> pour certains cookies de session</li>
+                <li><strong>6 mois</strong> pour les cookies de mesure d'audience après anonymisation</li>
+            </ul>
+            <p>Les données sont ensuite supprimées ou anonymisées.</p>
+            
+            <h2>8. Vos droits</h2>
+            <p>Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :</p>
+            <ul>
+                <li><strong>Droit d'accès :</strong> Vous pouvez obtenir la confirmation que des données vous concernant sont traitées et y accéder</li>
+                <li><strong>Droit de rectification :</strong> Vous pouvez faire rectifier les données inexactes vous concernant</li>
+                <li><strong>Droit à l'effacement :</strong> Vous pouvez demander la suppression de vos données dans certains cas</li>
+                <li><strong>Droit à la limitation :</strong> Vous pouvez demander la limitation du traitement de vos données</li>
+                <li><strong>Droit d'opposition :</strong> Vous pouvez vous opposer au traitement de vos données pour des motifs légitimes</li>
+                <li><strong>Droit à la portabilité :</strong> Vous pouvez recevoir vos données dans un format structuré et les transmettre à un autre responsable</li>
+                <li><strong>Droit de retirer votre consentement</strong> à tout moment pour les cookies non essentiels</li>
+            </ul>
+            
+            <div class="contact-info">
+                <h3>Exercer vos droits</h3>
+                <p>Pour exercer vos droits ou pour toute question concernant notre politique de cookies, vous pouvez nous contacter :</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Par email :</strong>
+                        <span><a href="mailto:cyril.ragonet@gmail.com">cyril.ragonet@gmail.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Par téléphone :</strong>
+                        <span><a href="tel:+33695368383">06 95 36 83 83</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>SIRET :</strong>
+                        <span>538 313 172 00024</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Adresse :</strong>
+                        <span>Aix-en-Provence, France</span>
+                    </div>
+                </div>
+                <p style="margin-top: 15px; font-size: 14px;">Nous nous engageons à répondre à votre demande dans un délai maximum d'un mois.</p>
+                <p style="font-size: 14px;">Vous avez également le droit d'introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank">CNIL</a> si vous estimez que le traitement de vos données n'est pas conforme à la réglementation.</p>
+            </div>
+            
+            <h2>9. Gestion de vos préférences</h2>
+            <p>Vous pouvez gérer vos préférences concernant les cookies de plusieurs manières :</p>
+            
+            <h3>9.1 Via notre outil de consentement</h3>
+            <p>Lors de votre première visite, un bandeau vous permet d'accepter ou de refuser les cookies non essentiels. Vous pouvez à tout moment modifier vos choix en cliquant sur le lien présent en bas de chaque page.</p>
+            
+            <h3>9.2 Via les paramètres de votre navigateur</h3>
+            <p>Vous pouvez configurer votre navigateur pour :</p>
+            <ul>
+                <li>Accepter ou refuser tous les cookies</li>
+                <li>Être averti à chaque fois qu'un cookie est déposé</li>
+                <li>Supprimer systématiquement les cookies en fermant votre navigateur</li>
+            </ul>
+            <p>Voici comment procéder selon votre navigateur :</p>
+            <ul>
+                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/fr/kb/cookies" target="_blank">Mozilla Firefox</a></li>
+                <li><a href="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" target="_blank">Safari</a></li>
+                <li><a href="https://support.microsoft.com/fr-fr/microsoft-edge/supprimer-les-cookies-dans-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">Microsoft Edge</a></li>
+            </ul>
+            <p><strong>Attention :</strong> Le refus des cookies essentiels peut empêcher le bon fonctionnement de certaines fonctionnalités du site.</p>
+            
+            <h2>10. Transferts hors UE</h2>
+            <p>Certains de nos prestataires, notamment Google, sont susceptibles de transférer des données vers des pays situés hors de l'Union Européenne, notamment aux États-Unis. Ces transferts sont encadrés par des garanties appropriées telles que les clauses contractuelles types de la Commission Européenne.</p>
+            
+            <h2>11. Mises à jour de la politique</h2>
+            <p>La présente politique de cookies peut être mise à jour périodiquement pour tenir compte des évolutions légales, réglementaires ou techniques. Nous vous invitons à la consulter régulièrement. La date de la dernière mise à jour est indiquée en haut de cette page.</p>
+            
+            <h2>12. Contact du Délégué à la Protection des Données (DPD)</h2>
+            <p>Conformément au RGPD, Missy Soga a désigné un Délégué à la Protection des Données (DPD) que vous pouvez contacter :</p>
+            <div class="highlight">
+                <p><strong>Délégué à la Protection des Données</strong><br>
+                Cyril Ragonet<br>
+                Email : <a href="mailto:cyril.ragonet@gmail.com">cyril.ragonet@gmail.com</a><br>
+                Téléphone : <a href="tel:+33695368383">06 95 36 83 83</a></p>
+            </div>
+            
+          <a href="https://www.missysoga.com" class="back-link">← Retour au site Missy Soga</a>
+        
+        <div class="footer">
+            <p>© 2026 Missy Soga - Tous droits réservés<br>
+            SIRET : 538 313 172 00024 - Marque déposée<br>
+            Dermocosmétique française pour peaux sensibles</p>
+        </div>
+    </div>
+</body>
+</html>
