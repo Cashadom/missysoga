@@ -1,0 +1,15 @@
+<svg viewBox="0 0 24 24" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <!-- box -->
+  <rect x="5" y="9" width="14" height="12" rx="2" stroke="#FFC83D" stroke-width="1.6"></rect>
+  <!-- lid -->
+  <path d="M4.5 9H19.5" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round"></path>
+  <!-- ribbon vertical -->
+  <path d="M12 9V21" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round"></path>
+  <!-- bow minimal -->
+  <path d="M10.5 6.8C9.5 6.8 8.8 6.2 8.8 5.5
+           C8.8 4.8 9.4 4.4 10.1 4.4
+           C11 4.4 12 5.8 12 5.8" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round"></path>
+  <path d="M13.5 6.8C14.5 6.8 15.2 6.2 15.2 5.5
+           C15.2 4.8 14.6 4.4 13.9 4.4
+           C13 4.4 12 5.8 12 5.8" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round"></path>
+</svg>
